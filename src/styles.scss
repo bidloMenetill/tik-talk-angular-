@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "fonts";
+:root {
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --primary-color: #ae7aff;
+  --second-light-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--dark-color);
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--light-color);
+  background-image: url(/images/background.jpg);
+}
+h1 {
+  color: var(--second-light-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "JetBrains Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px; /* 116.667% */
+}

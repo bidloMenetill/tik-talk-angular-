@@ -1,0 +1,47 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  align-items: center;
+  margin: 0 10%;
+}
+.login-label {
+  color: var(--second-light-color);
+  font-family: "JetBrains Mono";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.login-input {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--second-light-color);
+  background: var(--dark-color);
+  display: flex;
+  padding: 12px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  width: 440px;
+  color: var(--light-color);
+}
+.login-form {
+  margin-top: 60px;
+}
+.login-button {
+  margin-top: 32px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 2px;
+  border: 1px solid var(--dark-color);
+  background: var(--primary-color);
+  width: 440px;
+  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.25);
+}

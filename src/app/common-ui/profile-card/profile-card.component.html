@@ -1,0 +1,31 @@
+@if (profile) {
+<li class="profile-card">
+  <div class="avatar-name">
+    <img
+      [src]="profile.avatarUrl | imageUrl"
+      [alt]="profile.username"
+      class="profile-card-avatar"
+    />
+    <div class="profile-card-name">
+      <strong>{{ profile.firstName }} {{ profile.lastName }}</strong>
+      <span>{{ profile.username }}</span>
+    </div>
+  </div>
+  <div class="description">
+    <h4 class="profile-card-description">
+      {{ profile.description }}
+    </h4>
+  </div>
+  <div>
+    <ul class="profile-card-skills-wrapper">
+      @for (item of profile.stack; track item) {
+      <li class="profile-card-skill">{{ item }}</li>
+      }
+    </ul>
+  </div>
+  <div class="profile-card-links">
+    <button class="profile-card-subscribe">Подписаться</button>
+  </div>
+</li>
+
+}
